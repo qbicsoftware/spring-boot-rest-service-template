@@ -1,5 +1,6 @@
 package life.qbic.springbootresttemplate;
 
+import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -21,8 +22,11 @@ public class ProjectController {
 
   @RequestMapping(value = "/projects/{id}", method = RequestMethod.GET)
   public ResponseEntity<Object> getProject(@PathVariable("id") String projectCode) {
-    System.out.printf("Incoming request for id: %s", projectCode);
-    return new ResponseEntity<>("Worked", HttpStatus.OK);
+    System.out.printf("Incoming request for project id: %s", projectCode);
+    Optional<Project> project = projectRepository.findProject(projectCode);
+    return project
+        .map(value -> new ResponseEntity<Object>(value, HttpStatus.OK))
+        .orElseGet(() -> new ResponseEntity<>("No project found for id " + projectCode,
+            HttpStatus.NOT_FOUND));
   }
-
 }
