@@ -39,6 +39,10 @@ Just change into the folder and run the REST service app with:
 java -jar spring-boot-rest-template-1.0.0-SNAPSHOT.jar
 ```
 
+### Configuration
+
+#### Properties
+
 The default configuration of the app binds to the local port 8080 to the systems localhost:
 
 ```
@@ -51,6 +55,13 @@ If you want to change the server port, let's say `8085`, you can configure it by
 ```
 java -jar -Dserver.port=8085 spring-boot-rest-template-1.0.0-SNAPSHOT.jar
 ```
+
+#### Environment Variables
+You can configure the application further by specifying the following environment variables:
+
+| Environment Variable | Description | Default Value |
+|----------------------|-------------|---------------|
+|                      |             |               |
 
 ## How to use
 
