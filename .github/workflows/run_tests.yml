@@ -1,0 +1,28 @@
+name: Run Maven Tests
+
+on: [ push ]
+
+env:
+  JAVA_VERSION: 1.17
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up JDK $JAVA_VERSION
+        uses: actions/setup-java@v1
+        with:
+          java-version: $JAVA_VERSION
+
+      - name: Load local Maven repository cache
+        uses: actions/cache@v2
+        with:
+          path: ~/.m2/repository
+          key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
+          restore-keys: |
+            ${{ runner.os }}-maven-
+
+      - name: Run tests
+        run: mvn clean verify
