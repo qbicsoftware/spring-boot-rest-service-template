@@ -1,15 +1,18 @@
 # <p align=center>Toy REST</p>
-<div style="text-align: center">
+
+<p align="center"><i>A minimal functional example for a http REST service created with <a href="https://spring.io/projects/spring-boot">Spring Boot</a>.</i></p>
+<br>
+
+<p align="center">
 <img src="https://github.com/qbicsoftware/spring-boot-rest-service-template/actions/workflows/build_package.yml/badge.svg">
 <img src="https://github.com/qbicsoftware/spring-boot-rest-service-template/actions/workflows/run_tests.yml/badge.svg">
 <img src="https://github.com/qbicsoftware/spring-boot-rest-service-template/actions/workflows/codeql-analysis.yml/badge.svg">
-<img alt="GitHub release (latest SemVer including pre-releases)" src="https://img.shields.io/github/v/release/qbicsoftware/spring-boot-rest-service-template?include_prereleases">
+<img alt="GitHub release (latest SemVer including pre-releases)" src="https://img.shields.io/github/v/release/qbicsoftware/spring-boot-rest-service-template?include_prereleases"></br>
 <img alt="GitHub" src="https://img.shields.io/github/license/qbicsoftware/spring-boot-rest-service-template">
 <img src="https://img.shields.io/badge/language-java-blue.svg">
 <img src="https://img.shields.io/badge/framework-spring-blue.svg">
-</div>
 
-A minimal functional example for a http REST service created with [Spring Boot](https://spring.io/projects/spring-boot). 
+</div>
 
 Since this is a [Github repository template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template), 
 create a new application based on this repo and start your project directly.
