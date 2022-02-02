@@ -17,8 +17,7 @@
   <properties>
     <java.version>17</java.version>
   </properties>
-  <!-- If you have Maven modules in your project, you can
-  define top level dependencies and there fixed version here:
+  <!-- In case you are using modules, fixed dependency versions are defined here. Those versions are inherited by your modules.
   <dependencyManagement>
     <dependencies>
       <dependency>
@@ -30,8 +29,7 @@
   </dependencyManagement>
   -->
   <dependencies>
-    <!-- If you want to use fixed version dependencies defined in the dependencyManagement section
-    above, no need to mention the version here:
+    <!-- When using dependencyManagement, you can choose to inherit the version from there.
     <dependency>
       <groupId>my.domain</groupId>
       <artifactId>my-artifact</artifactId>
