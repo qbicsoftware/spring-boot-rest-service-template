@@ -1,4 +1,4 @@
-# <p style="text-align: center">Toy REST</p>
+# <center>Toy REST</center>
 
 <center><i>A minimal functional example for a http REST service created with <a href="https://spring.io/projects/spring-boot">Spring Boot</a>.</i></center>
 <br>
