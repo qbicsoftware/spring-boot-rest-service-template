@@ -101,6 +101,9 @@
       <url>https://qbic-repo.qbic.uni-tuebingen.de/repository/maven-releases</url>
     </repository>
   </repositories>
+  <!-- This configures the target artifact repositories for deployment
+  and is used by Maven's 'deploy' goal.
+  So if you call 'mvn clean package deploy', it will end up there: -->
   <distributionManagement>
     <repository>
       <uniqueVersion>true</uniqueVersion>
