@@ -11,11 +11,9 @@
 <img alt="GitHub" src="https://img.shields.io/github/license/qbicsoftware/spring-boot-rest-service-template">
 <img src="https://img.shields.io/badge/language-java-blue.svg">
 <img src="https://img.shields.io/badge/framework-spring-blue.svg"></p>
-<p align="center">
-**NOTE**: Since this is a [Github repository template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template), 
-create a new application based on this repo and start your project directly.
-</p>
 
+**NOTE**: Since this is a [Github repository template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template),
+create a new application based on this repo and start your project directly.
 ## How to run
 
 First compile the project and build an executable java archive:
