@@ -7,16 +7,14 @@
 <img src="https://github.com/qbicsoftware/spring-boot-rest-service-template/actions/workflows/build_package.yml/badge.svg">
 <img src="https://github.com/qbicsoftware/spring-boot-rest-service-template/actions/workflows/run_tests.yml/badge.svg">
 <img src="https://github.com/qbicsoftware/spring-boot-rest-service-template/actions/workflows/codeql-analysis.yml/badge.svg">
-<img alt="GitHub release (latest SemVer including pre-releases)" src="https://img.shields.io/github/v/release/qbicsoftware/spring-boot-rest-service-template?include_prereleases"></br>
+<img alt="GitHub release (latest SemVer including pre-releases)" src="https://img.shields.io/github/v/release/qbicsoftware/spring-boot-rest-service-template?include_prereleases">
+<br/>
 <img alt="GitHub" src="https://img.shields.io/github/license/qbicsoftware/spring-boot-rest-service-template">
 <img src="https://img.shields.io/badge/language-java-blue.svg">
-<img src="https://img.shields.io/badge/framework-spring-blue.svg">
+<img src="https://img.shields.io/badge/framework-spring-blue.svg"></p>
 
-</div>
-
-**NOTE**: Since this is a [Github repository template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template), 
+**NOTE**: Since this is a [Github repository template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template),
 create a new application based on this repo and start your project directly.
-
 ## How to run
 
 First compile the project and build an executable java archive:
@@ -39,6 +37,10 @@ Just change into the folder and run the REST service app with:
 java -jar spring-boot-rest-template-1.0.0-SNAPSHOT.jar
 ```
 
+### Configuration
+
+#### Properties
+
 The default configuration of the app binds to the local port 8080 to the systems localhost:
 
 ```
@@ -51,6 +53,13 @@ If you want to change the server port, let's say `8085`, you can configure it by
 ```
 java -jar -Dserver.port=8085 spring-boot-rest-template-1.0.0-SNAPSHOT.jar
 ```
+
+#### Environment Variables
+You can configure the application further by specifying the following environment variables:
+
+| Environment Variable | Description | Default Value |
+|----------------------|-------------|---------------|
+|                      |             |               |
 
 ## How to use
 
@@ -93,3 +102,35 @@ Currently, there is only one HTTP GET endpoint to query different project resour
 ```
 
 Working project identifiers are `QTEST` and `QABCD`.
+
+
+## Add this library as a dependency
+
+This library is not hosted on maven central. To use it, you have to include our artifact repository to your pom.
+
+```
+<repositories>
+    <repository>
+        <releases>
+            <enabled>true</enabled>
+            <updatePolicy>always</updatePolicy>
+            <checksumPolicy>fail</checksumPolicy>
+        </releases>
+        <snapshots>
+            <enabled>false</enabled>
+        </snapshots>
+        <id>nexus-releases</id>
+        <name>QBiC Releases</name>
+        <url>https://qbic-repo.qbic.uni-tuebingen.de/repository/maven-releases</url>
+    </repository>
+</repositories>
+```
+
+Then include this library as an artifact.
+```
+<dependency>
+    <groupId>...</groupId>
+    <artifactId>...</artifactId>
+    <version>...</version>
+</dependency>
+```
