@@ -93,3 +93,35 @@ Currently, there is only one HTTP GET endpoint to query different project resour
 ```
 
 Working project identifiers are `QTEST` and `QABCD`.
+
+
+## Add this library as a dependency
+
+This library is not hosted on maven central. To use it, you have to include our artifact repository to your pom.
+
+```
+<repositories>
+    <repository>
+        <releases>
+            <enabled>true</enabled>
+            <updatePolicy>always</updatePolicy>
+            <checksumPolicy>fail</checksumPolicy>
+        </releases>
+        <snapshots>
+            <enabled>false</enabled>
+        </snapshots>
+        <id>nexus-releases</id>
+        <name>QBiC Releases</name>
+        <url>https://qbic-repo.qbic.uni-tuebingen.de/repository/maven-releases</url>
+    </repository>
+</repositories>
+```
+
+Then include this library as an artifact.
+```
+<dependency>
+    <groupId>...</groupId>
+    <artifactId>...</artifactId>
+    <version>...</version>
+</dependency>
+```
