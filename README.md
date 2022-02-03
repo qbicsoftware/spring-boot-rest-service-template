@@ -54,7 +54,7 @@ If you want to change the server port, let's say `8085`, you can configure it by
 java -jar -Dserver.port=8085 spring-boot-rest-template-1.0.0-SNAPSHOT.jar
 ```
 
-#### Application Configuration
+#### Environment Variables
 You can configure the application further by specifying the following environment variables:
 
 | Environment Variable | Description | Default Value |
@@ -108,7 +108,7 @@ Working project identifiers are `QTEST` and `QABCD`.
 
 This library is not hosted on maven central. To use it, you have to include our artifact repository to your pom.
 
-```
+```xml
 <repositories>
     <repository>
         <releases>
@@ -127,7 +127,7 @@ This library is not hosted on maven central. To use it, you have to include our 
 ```
 
 Then include this library as an artifact.
-```
+```xml
 <dependency>
     <groupId>...</groupId>
     <artifactId>...</artifactId>
