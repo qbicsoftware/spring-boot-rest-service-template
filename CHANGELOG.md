@@ -1,7 +1,6 @@
 # Version history with changes
 
 ## 1.1.0 (2022-02-04)
-<hr>
 
 ### Added
 
