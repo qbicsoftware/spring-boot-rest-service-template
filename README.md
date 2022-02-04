@@ -9,7 +9,7 @@
 [![CodeQL](https://github.com/qbicsoftware/spring-boot-rest-service-template/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/qbicsoftware/spring-boot-rest-service-template/actions/workflows/codeql-analysis.yml)
 [![release](https://img.shields.io/github/v/release/qbicsoftware/spring-boot-rest-service-template?include_prereleases)](https://github.com/qbicsoftware/spring-boot-rest-service-template/releases)
 
-![license](https://img.shields.io/github/license/qbicsoftware/spring-boot-rest-service-template)
+[![license](https://img.shields.io/github/license/qbicsoftware/spring-boot-rest-service-template)](https://github.com/qbicsoftware/spring-boot-rest-service-template/blob/main/LICENSE)
 ![language](https://img.shields.io/badge/language-java-blue.svg)
 ![framework](https://img.shields.io/badge/framework-spring-blue.svg)
 
