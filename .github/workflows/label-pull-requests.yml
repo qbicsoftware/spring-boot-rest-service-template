@@ -4,7 +4,6 @@ on:
   pull_request:
     types: [ opened, edited ]
 
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -13,4 +12,7 @@ jobs:
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           ignore-comments: true
-          labels-synonyms: '{"fix":["solves","fix","fixes"],"features":["introduces", "feature"],"documentation":["docs", "documentation"]}'
+          labels-synonyms: '{"fix":["solves","fix","fixes"],
+            "features":["introduces", "feature"],
+            "documentation":["docs", "documentation"],
+            "ci":["ci", "continuous integration", "github workflows"]}'
