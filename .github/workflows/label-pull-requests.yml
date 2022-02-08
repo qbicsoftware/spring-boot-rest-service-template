@@ -8,11 +8,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: Renato66/auto-label@v2
+      - uses: TimonVS/pr-labeler-action@v3
         with:
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
-          ignore-comments: true
-          labels-synonyms: '{"fix":["solves","fix","fixes"],
-            "features":["introduces", "feature"],
-            "documentation":["docs", "documentation"],
-            "ci":["ci", "continuous integration", "github workflows"]}'
+          configuration-path: .github/pr-labels.yml # optional, .github/pr-labeler.yml is the default value
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
