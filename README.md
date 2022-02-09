@@ -136,3 +136,9 @@ Then include this library as an artifact.
     <version>...</version>
 </dependency>
 ```
+
+## License
+
+This work is licensed under the [MIT license](https://mit-license.org/). 
+
+**Note**: This work uses the [Spring Framework](https://github.com/spring-projects) and derivatives from the Spring framework family, which are licensed under [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0).
