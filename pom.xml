@@ -11,7 +11,7 @@
   </parent>
   <groupId>life.qbic</groupId>
   <artifactId>spring-boot-rest-template</artifactId>
-  <version>1.6.0</version> <!-- we always aim for 1.0.0 as the first public release -->
+  <version>1.6.1</version> <!-- we always aim for 1.0.0 as the first public release -->
   <name>spring-boot-rest-template</name>
   <description>spring-boot-rest-template</description>
   <properties>
